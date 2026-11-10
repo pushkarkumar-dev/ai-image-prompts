@@ -36,7 +36,7 @@ h1{font-size:26px;line-height:1.2;margin:20px 0 6px}
 .box{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px}
 .box h2{font-size:15px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:0 0 10px}
 pre{white-space:pre-wrap;word-wrap:break-word;margin:0;font:15px/1.6 ui-monospace,SFMono-Regular,Menlo,monospace}
-button.copy{margin-top:14px;width:100%;border:0;border-radius:12px;padding:14px;font:600 16px/1 inherit;background:var(--accent);color:var(--accent-ink);cursor:pointer}
+button.copy{margin-top:14px;width:100%;border:0;border-radius:12px;padding:14px;font-family:inherit;font-size:17px;font-weight:700;line-height:1;background:var(--accent);color:var(--accent-ink);cursor:pointer}
 button.copy:active{transform:scale(.99)}
 .steps{margin:18px 0 0;padding-left:20px;color:var(--muted)}
 .steps li{margin:4px 0}
