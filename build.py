@@ -122,9 +122,15 @@ def build_prompt(d):
     url = f"{SITE_URL}/p/{slug}/"
     img = f"{SITE_URL}/{d['image']}"
     if d.get("uses_photo"):
+        people = int(d.get("people") or 1)
+        who = (
+            "one clear, front-facing photo of yourself"
+            if people == 1
+            else f"{people} clear, front-facing photos, one of each person, in the order the prompt names them"
+        )
         steps = (
             "<li>Copy the prompt.</li>"
-            "<li>Open your AI image tool and attach one clear, front-facing photo of yourself.</li>"
+            f"<li>Open your AI image tool and attach {who}.</li>"
             "<li>Paste the prompt and generate.</li>"
         )
     else:
